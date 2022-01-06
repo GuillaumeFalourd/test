@@ -1,6 +1,7 @@
 name: gitaction
 
 on:
+  push:
   workflow_dispatch:
     
 jobs: 
