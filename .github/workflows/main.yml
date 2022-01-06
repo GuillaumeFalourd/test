@@ -18,6 +18,9 @@ jobs:
       run: |
         saveRDS(1:3, file = "file.rds")
       shell: Rscript {0}
+      
+    - name: Check Files
+      run: ls -lha
 
     - uses: actions/checkout@v2.3.4
     - uses: GuillaumeFalourd/git-commit-push@v1.1
