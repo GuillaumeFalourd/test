@@ -19,10 +19,6 @@ jobs:
         saveRDS(1:3, file = "file.rds")
       shell: Rscript {0}
 
-  pushFiles:
-    needs: genFileAndPush
-    runs-on: macOS-latest
-    steps:
     - uses: actions/checkout@v2.3.4
     # [...] --> steps with actions or commands updating repository files
     - uses: GuillaumeFalourd/git-commit-push@v1.1
