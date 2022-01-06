@@ -27,6 +27,6 @@ jobs:
       with:
         target_branch: main
         files: file.rds
-        remote_repository: https://github.com/GUillaumeFalourd/repo1
+        remote_repository: https://github.com/GuillaumeFalourd/repo1
         access_token: ${{secrets.ACCESS_TOKEN}}
         force: true
