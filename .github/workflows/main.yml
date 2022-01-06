@@ -9,7 +9,8 @@ jobs:
 
     # Load repo and install R
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2.3.4
+
     - uses: r-lib/actions/setup-r@master
       with:
          r-version: '4.1.2'
@@ -22,7 +23,6 @@ jobs:
     - name: Check Files
       run: ls -lha
 
-    - uses: actions/checkout@v2.3.4
     - uses: GuillaumeFalourd/git-commit-push@v1.1
       with:
         target_branch: main
