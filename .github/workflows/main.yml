@@ -28,5 +28,5 @@ jobs:
         git remote set-url origin https://env.REPO_KEY@github.com/cnftstats/repo1.git
         git push -u origin main
       env:
-        REPO_KEY: ${{secrets.GITHUB_TOKEN}}
+        REPO_KEY: ${{secrets.ACCESS_TOKEN}}
         username: github-actions
