@@ -25,7 +25,7 @@ jobs:
         git config --local user.name actions-user
         git config --local user.email "actions@github.com"
         git add file.rds
-        git remote set-url origin https://$REPO_KEY@github.com/cnftstats/repo1.git
+        git remote set-url origin https://${{secrets.ACCESS_TOKEN}}@github.com/cnftstats/repo1.git
         git push -u origin main
       env:
         REPO_KEY: ${{secrets.ACCESS_TOKEN}}
