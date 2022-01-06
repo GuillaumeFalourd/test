@@ -24,9 +24,11 @@ jobs:
     - name: Check Files
       run: ls -lha
 
-    - name: Copy files to new repo
-      uses: GuillaumeFalourd/copy-push-files@v1
+    - name: Send files to new repo
+      uses: GuillaumeFalourd/git-commit-push@main
       with:
-        source_files: file.rds
+        target_branch: main
+        files: file.rds
         remote_repository: https://github.com/GuillaumeFalourd/repo1
         access_token: ${{ secrets.ACCESS_TOKEN }}
+        force: true
