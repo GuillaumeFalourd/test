@@ -27,6 +27,6 @@ jobs:
     - uses: GuillaumeFalourd/git-commit-push@v1.1
       with:
         files: file.rds
-        remote_repository: https://github.com/GuillaumeFalourd/repo1
-        access_token: ${{secrets.ACCESS_TOKEN}}
-        force: true
+#        remote_repository: https://github.com/GuillaumeFalourd/repo1
+#        access_token: ${{secrets.ACCESS_TOKEN}}
+#        force: true
