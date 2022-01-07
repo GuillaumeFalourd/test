@@ -25,7 +25,7 @@ jobs:
       run: ls -lha
 
     - name: Send files to new repo
-      uses: GuillaumeFalourd/git-commit-push@main
+      uses: GuillaumeFalourd/git-commit-push@v1
       with:
         target_branch: main
         files: file.rds
