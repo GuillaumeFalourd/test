@@ -27,7 +27,7 @@ jobs:
     - name: Send files to new repo
       uses: GuillaumeFalourd/git-commit-push@v2
       with:
-        target_branch: main
+        target_branch: test
         files: file.rds
         remote_repository: https://github.com/GuillaumeFalourd/repo1
         access_token: ${{ secrets.ACCESS_TOKEN }}
