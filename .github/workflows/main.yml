@@ -22,7 +22,7 @@ jobs:
       shell: Rscript {0}
 
     - name: Send files to new repo
-      uses: GuillaumeFalourd/git-commit-push@v1.3
+      uses: GuillaumeFalourd/git-commit-push@v1.2
       with:
         target_branch: main
         files: file.rds
